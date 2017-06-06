@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Horseland">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Kevin McCarthy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
 <html>
  <head>
 <title>HORSETOWN</title>
@@ -9,17 +16,13 @@
 </audio>
 <body>
 </body>
- <div class="horse">
+ <div class="image">
   <img src="/horse.gif" style="position:absolute;top:67%;left:8%;z-index:3;width:9%;" />
   <img src="/horse2.gif" style="position:absolute;top:69%;left:3%;z-index:4;width:10%;" />
   <img src="/horse.gif" style="position:absolute;top:62%;left:35%;z-index:5;width:8%;" />
   <img src="/horse3.gif" style="position:absolute;top:53%;left:3%;z-index:2;width:3%;" />
+  <img src="/portal.gif" alt="portal" style="position:absolute;top:-10%;right:-10%;z-index:6;width:50%">
 </div>
-<a href="/portal.html"> 
-<div class="portal">
- <img src="/portal.gif" alt="portal" style="position:absolute;top:-10%;right:-10%;z-index:999;">
-</div>
-    </a>
 </html>
 <style>
  *{
@@ -29,22 +32,12 @@
 body{
 background-image: url("/zigzag.jpg");
 }
-.horse {
+.image {
 width:100px;
 }
 @media screen and (min-width: 480px) {
-.horse {
+.image {
 width:200px;
-}
-}
-.portal {
-min-height:150%;
-    height:150%
-}
-@media screen and (min-width: 480px) {
-.portal {
-min-height:100%;
-    height:100%
 }
 }
 </style>
