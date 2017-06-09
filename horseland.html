@@ -5,7 +5,7 @@
   <meta name="description" content="Horseland">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
   <meta name="author" content="Kevin McCarthy">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
 </head> 
 <html>
 <audio autoplay loop>
@@ -14,28 +14,81 @@
 </audio>
 <body>
 </body>
- <container>
-  <img style="background-color: red">
-  hhh
-  </container>
+ <div class="sideBar">
+    <img src="logo.svg" class="logo" alt="logo" />
+    <ul id="sideNav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Prices</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Clients</a></li>
+    </ul>
+</div>
+<div class="mainImg">
+    <!--<img src="http://upload.wikimedia.org/wikipedia/commons/5/5e/Big_Wood,_N2.JPG" alt="woods" />-->
+</div>
 </html>
 <style>
  *{
  margin:0px;
  }
- body{
-   background-color: yellow;
- }
- .container{
-  width:100%;
-  height:100%;
-  background-color: red;
- }
-@media screen and (min-width: 480px) {
- .container{
-  width:100%;
-  height: 100%;
-  background-color: green;
- }
- }
+ html {
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sideBar {
+    background: mediumSeaGreen;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 20%;
+    z-index: 500;
+}
+
+.mainImg { /* Remove background and background-size to see how it is with an img tag in the html */
+    width: 80%;
+    position: absolute;
+    background: url(http://upload.wikimedia.org/wikipedia/commons/5/5e/Big_Wood,_N2.JPG) no-repeat;
+    background-size: 100% 100%;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#sideNav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sideNav a {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+#sideNav a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#sideNav li {
+    font-size: 3em;
+    line-height: 150%;
+    font-family: 'century gothic';
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
 </style>
+<script>
+ function windowH() {
+    var wH = $(window).height();
+    
+    $('.sideBar, .mainImg').css({height: wH});
+}
+
+windowH();
+</script>
