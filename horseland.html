@@ -14,11 +14,8 @@
 </audio>
 <body>
 </body>
- <div class="horse">
-    <img src="horse.png" class="logo" alt="horse" />
-</div>
-<div class="mainImg">
-    <!--<img src="http://upload.wikimedia.org/wikipedia/commons/5/5e/Big_Wood,_N2.JPG" alt="woods" />-->
+ <div class="horses">
+    <img src="horse.gif" class="image" alt="horses" />
 </div>
 </html>
 <style>
@@ -33,31 +30,29 @@ body {
     padding: 0;
 }
 
-.horse {
+.horses {
     background: red;
     position: relative;
     top: 0;
     left: 0;
     width: 20%;
+ height: 100%
     z-index: 500;
 }
 
-.mainImg { /* Remove background and background-size to see how it is with an img tag in the html */
-    width: 80%;
-    position: absolute;
-    background: url(http://upload.wikimedia.org/wikipedia/commons/5/5e/Big_Wood,_N2.JPG) no-repeat;
-    background-size: 100% 100%;
-    right: 0;
-    top: 0;
-    overflow: hidden;
-}
-</style>
 <script>
  function windowH() {
     var wH = $(window).height();
     
-    $('.sideBar, .mainImg').css({height: wH});
+    $('.horses').css({height: wH});
 }
 
 windowH();
+  function windowW() {
+    var wW = $(window).width();
+    
+    $('.horses').css({height: wW});
+}
+
+windowW();
 </script>
