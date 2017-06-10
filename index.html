@@ -1,117 +1,95 @@
+<!DOCTYPE html>
+ <head>
+  <title>HORSELAND</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Horseland">
+  <meta name="keywords" content="Horses, Psychadelic">
+  <meta name="author" content="Kevin McCarthy">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+</head> 
 <html>
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
-<div class="horse1">
-<img src="/horse.gif" style="position:absolute;bottom:3%;left:8%;z-index:3;" />
-</div>
-<div class="horse2">
-<img src="/horse2.gif" style="position:absolute;bottom:1%;left:3%;z-index:4;" />
-</div>
-<div class="horse3">
-<img src="/horse.gif" style="position:absolute;bottom:8%;left:35%;z-index:5;" />
-</div>
-    <div class="horse4">
-<img src="/horse3.gif" style="position:absolute;bottom:17%;left:3%;z-index:2;" />
-        </div>
-    <a href="/sampson.html"> 
-        <div class="horselink">
-<img src="/BLANK.png" alt="horselink" style="position:absolute;bottom:17%;left:3%;z-index:999;" />
-        </div>
-        </a>
-    <a href="/portal.html"> 
-<div class="portal">
-<img src="/portal.gif" alt="portal" style="z-index:999;border:0;">
-</div>
-    </a>
-    <head>
-<title>HORSETOWN</title>
-</head>
-<body>
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
 <audio autoplay loop>
 <source src="ambient.ogg" type="audio/ogg">
 <source src="ambient.mp3" type="audio/mpeg">
 </audio>
-    <div>
-    <div class="horizon"></div>
-    </div>
-        <div>
-    <div class="corner"></div>
-    </div>
+<body scroll="no" style="overflow: hidden">
 </body>
+     <a href="/portal.html"> 
+<div class="portal">
+<img src="/portal.gif" alt="portal" style="position:absolute;right:-10%;bottom:-10%;top:-10%;z-index:1;border:0;overflow:hidden;">
+</div>
+    </a>
+ <div class="horse">
+<img src="/horse.gif" style="z-index:3;" />
+</div>
+  <div class="horse2">
+<img src="/horse.gif" style="z-index:4;" />
+</div>
+   <div class="horse3">
+<img src="/horse2.gif" style="z-index:5;" />
+</div>
+   <div class="horse4">
+<img src="/horse3.gif" style="z-index:2;" />
+</div>
 </html>
 <style>
-    *
-{
-overflow:hidden;
+ body {
+position: fixed;
+    width: 100%;
+    height: 100%;
 }
+              .portal img { 
+               height:120%;
+               width:60%;
+        }
+@media screen and (max-width: 600px) and (min-width: 0px) {
     body {
-    background-image: url("/zigzag.jpg");
-    overflow: hidden;}
+        background-image: url("/zigzag.jpg");
+    }
+          .horse img { 
+           width:0%;
+        }
+          .horse2 img {  
+           width:0%;
+        }
+          .horse3 img { 
+           width:0%;
+        }
+          .horse4 img { 
+           height:50%;
+           position:absolute;
+           bottom:8%;
+           left:0%;
+        }
 }
-     .horse1 {
-        width:200px;
+   @media screen and (min-width: 600px) {
+    body {
+        background-image: url("/zigzag.jpg");
     }
-    .horse1 img {
-        width:9%;
-    }
-    .horse2 {
-        width:200px;
-    }
-    .horse2 img {
-        width:10%;
-    }
-
-                .horse3 {
-        width:200px;
-    }
-    .horse3 img {
-        width:8%;
-    }
-        .portal { 
-                height:100%;
-                width:100%;
+          .horse img { 
+           width:8%;
+           position:absolute;
+           bottom:8%;
+           left:35%;
         }
-                    .horse4 {
-        width:200px;
+          .horse2 img { 
+           width:9%;
+           position:absolute;
+           bottom:3%;
+           left:8%;
     }
-        .horse4 img {
-        width:3%;
-    }
-        .portal { 
-                height:100%;
-                width:100%;
+          .horse3 img { 
+           width:10%;
+           position:absolute;
+           bottom:1%;
+           left:3%;
         }
-                        .horselink {
-        width:200px;
-    }
-            .horselink img {
-        width:3%;
-    }
-        .portal img {
-                width:80%;
-                height:150%;
-                bottom: -10%;
-                right:-30%;
-                position:absolute;
-        }
-            .corner {
-        width:100%;
-        height:100%;  
-        position:absolute; 
-        top:0px;
-        left:0px;
-        background:transparent url("/corner.png") no-repeat;
-            z-index:6;
-            
-    }
-        .horizon {
-        width:100%;
-        height:100%;  
-        position:absolute; 
-        top:211px;
-        left:0px;
-        background:transparent url("/horizon.png") repeat-x;
-            z-index:1;
-            
-    }
-</style>
+          .horse4 img { 
+           width:3%;
+           position:absolute;
+           bottom:17%;
+           left:3%;
+}
+ </style>
 
