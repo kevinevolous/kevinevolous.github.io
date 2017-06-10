@@ -17,20 +17,23 @@
 </body>
      <a href="/portal.html"> 
 <div class="portal">
-<img src="/portal.gif" alt="portal" style="position:absolute;right:-10%;bottom:-10%;top:-10%;z-index:1;border:0;overflow:hidden;">
+<img src="/portal.gif" alt="portal" style="position:absolute;right:-10%;bottom:-10%;top:-10%;z-index:2;border:0;overflow:hidden;">
 </div>
     </a>
  <div class="horse">
-<img src="/horse.gif" style="z-index:3;" />
-</div>
-  <div class="horse2">
 <img src="/horse.gif" style="z-index:4;" />
 </div>
+  <div class="horizon">
+<img src="/horizon.png" style="z-index:1;repeat-x;position:absolute;" />
+</div>
+  <div class="horse2">
+<img src="/horse.gif" style="z-index:5;" />
+</div>
    <div class="horse3">
-<img src="/horse2.gif" style="z-index:5;" />
+<img src="/horse2.gif" style="z-index:6;" />
 </div>
    <div class="horse4">
-<img src="/horse3.gif" style="z-index:2;" />
+<img src="/horse3.gif" style="z-index:3;" />
 </div>
 </html>
 <style>
@@ -47,6 +50,9 @@ position: fixed;
     body {
         background-image: url("/zigzag.jpg");
     }
+ .horizon img {
+  top:25%
+ }
           .horse img { 
            width:0%;
         }
@@ -67,6 +73,9 @@ position: fixed;
     body {
         background-image: url("/zigzag.jpg");
     }
+     .horizon img {
+  top:25%
+ }
           .horse img { 
            width:8%;
            position:absolute;
