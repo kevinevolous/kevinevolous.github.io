@@ -4,3 +4,7 @@
     height: 100%;
     background-image: url("/zigzag.jpg");
 }
+              .portal img { 
+               height:140%;
+               width:80%;
+        }
