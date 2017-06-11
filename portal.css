@@ -5,6 +5,12 @@
     background-image: url("/zigzag.jpg");
 }
               .portal img { 
+               position:absolute;
+               z-index:1;
+               right:-10%;
+               top:-20%;
+               bottom:-20%;
                height:140%;
                width:100%;
+               border:0px;
         }
