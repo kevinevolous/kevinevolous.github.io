@@ -33,3 +33,12 @@
                width:20%;
                border:0px;
         }
+              .shit img { 
+               position:absolute;
+               z-index:3;
+               left:0%;
+               bottom:20%;
+               height:auto;
+               width:20%;
+               border:0px;
+        }
