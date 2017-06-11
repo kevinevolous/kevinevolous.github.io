@@ -14,3 +14,13 @@
                width:100%;
                border:0px;
         }
+              .octopus img { 
+               position:absolute;
+               z-index:2;
+               right:0%;
+               top:-20%;
+               bottom:-20%;
+               height:140%;
+               width:100%;
+               border:0px;
+        }
