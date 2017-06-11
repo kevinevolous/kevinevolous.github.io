@@ -42,3 +42,18 @@
                width:15%;
                border:0px;
         }
+@media screen and (max-width: 600px) and (min-width: 0px) {
+          .shit img { 
+           bottom:10%;
+}
+}
+@media screen and (min-width: 600px) {
+          .shit img { 
+           bottom:20%;
+}
+}
+@media screen and (min-width: 800px) {
+          .shit img { 
+           bottom:10%;
+}
+}
