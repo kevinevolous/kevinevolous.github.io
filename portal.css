@@ -17,10 +17,10 @@
               .octopus img { 
                position:absolute;
                z-index:2;
-               right:0%;
-               top:-20%;
-               bottom:-20%;
-               height:140%;
-               width:100%;
+               right:5%;
+               top:0%;
+               bottom:0%;
+               height:80%;
+               width:60%;
                border:0px;
         }
